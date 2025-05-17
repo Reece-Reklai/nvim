@@ -70,7 +70,7 @@ return { -- You can easily change to a different colorscheme.
 				-- Comment = { fg = "foam" },
 				-- StatusLine = { fg = "love", bg = "love", blend = 15 },
 				-- VertSplit = { fg = "muted", bg = "muted" },
-				-- Visual = { fg = "base", bg = "text", inherit = false },
+				Visual = { fg = "base", bg = "text", inherit = false },
 			},
 
 			before_highlight = function(group, highlight, palette)

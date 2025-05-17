@@ -2,6 +2,7 @@ return { -- Useful plugin to show you pending keybinds.
 	"folke/which-key.nvim",
 	event = "VimEnter", -- Sets the loading event to 'VimEnter'
 	opts = {
+		preset = "helix",
 		-- delay between pressing a key and opening which-key (milliseconds)
 		-- this setting is independent of vim.opt.timeoutlen
 
@@ -13,8 +14,8 @@ return { -- Useful plugin to show you pending keybinds.
 			-- col = 0,
 			-- row = math.huge,
 			-- border = "none",
-			title = true,
-			title_pos = "top",
+			title = false,
+			title_pos = "bottom",
 			zindex = 1000,
 			-- Additional vim.wo and vim.bo options
 			bo = {},
