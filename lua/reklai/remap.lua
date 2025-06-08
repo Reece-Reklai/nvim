@@ -38,6 +38,9 @@ vim.keymap.set("n", "Q", "<nop>")
 vim.keymap.set("n", "<C-f>", "<cmd>silent !tmux neww tmux-sessionizer<CR>")
 vim.opt.clipboard = "unnamedplus"
 vim.keymap.set({ "n", "v" }, "<leader>y", [["+y]])
+vim.keymap.set("v", "<Tab>", ">gv")
+vim.keymap.set("v", "<S-Tab>", "<gv")
+vim.keymap.set("n", "<leader>ee", "oif err != nil {<CR>}<Esc>Oreturn err<Esc>")
 -- [[ Basic Autocommands ]]
 --  See `:help lua-guide-autocommands`
 
